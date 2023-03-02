@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="homepage">
+        <nav>
+            <img src="eduford_img/logo.png" alt="">
+            <div class="navlinks">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">contacts</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">follow</a></li>
+                </ul>
+            </div>
+            </section>
+            <!---------------------------->
+            <section class="text">
+            <h1><b>MR. JOE</b></h1>
+            <h2>Constant dripping hollows out a stone</h2>
+            <section class="ancho"><a href=""><i><b>EXPLORE</b></i></a></section>
+        </nav>
+    </section>
+</body>
+<style>
+    *{margin: 0;padding: 0;}
+    
+    .homepage{min-height: 100vh;
+              width: 100%;
+              background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), 
+              url(eduford_img/banner.png);
+              background-position: center;
+              background-size: cover;
+              position: relative;}
+
+nav{display: flex;
+padding: 2% 8%;
+justify-content: space-between;
+align-items: center;
+height: 30px;}  
+
+nav img{ width: 100px;}
+
+.navlinks{text-align: right;}
+
+.navlinks ul li{padding: 2px 6px;
+      list-style: none;
+      font-size: 20px;
+      display: inline-block;
+      position: relative;}
+      
+      .navlinks ul li a{color: white;}
+      a{color: #f44336; text-decoration: none; position: relative;}
+
+      h1{font-size: 100px;}
+
+      .text{position: absolute;
+      top:250px; left: 370px;
+      text-align: center; font-size: 30px;
+      color: white;}
+
+      .ancho::after{content: '';
+      width: 0%;
+      height: 2px;
+      background: #f44336;
+      display: block;margin: auto;
+      transition: 0.5s;}
+      .ancho:hover::after{width: 20%;}
+</style>
+</html>
